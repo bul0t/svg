@@ -8,22 +8,35 @@ body {
   min-height: 100px;
 }
 
+.svg-inline {
+  padding-top: 24px;
+}
 .amongus {
-  width: 256px;
-  height: 256px;
+  width: 400px;
+  height: 400px;
   fill: #e74c3c;
   stroke: #f39c12;
   stroke-width: 8px;
+  stroke-dasharray: 40 400;
+  stroke-dashoffset: 120;
+  transition-property: stroke-dasharray fill;
+  transition-duration: 4s;
 }
+.amongus:hover {
+  stroke-dasharray: 4 4;
+}
+
 .amongus__path {
+  /* display: block; */
   /* width: 256px; */
   /* height: 256px; */
   /* fill: #e74c3c; */
   /* stroke: #f39c12; */
   /* stroke-width: 8px; */
+  
 }
 
-.circle {
+/* .circle {
   fill: #2ecc71;
   transition-property: fill, transform;
   transition-duration: 0.3s;
@@ -31,4 +44,12 @@ body {
 .circle:hover {
   fill: #e74c3c;
   transform: translateX(300px);
-}
+} */
+
+/* .svg-background {
+  height: 100px;
+  width: 100px; // установи 80px для пропорции
+  background-image: url(amongus-background.svg);
+  background-size: cover; // или contain чтобы изображение поместилось полностью
+  background-repeat: no-repeat;
+} */
