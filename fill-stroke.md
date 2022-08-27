@@ -45,3 +45,28 @@
 `stroke-dashoffset` - смещение пунктирной обводки относительно первоначального положения, значение по-умолчанию 0
 
 `stroke-opacity` - определяет прозрачность обводки например `0.4`
+
+## Пример
+Сверху появляется анимация обводки и обходит всю фигуру:
+
+    .selector {
+      width: 400px;
+      height: 400px;
+      fill: #e74c3c;
+      stroke: #f39c12;
+      stroke-width: 8px;
+      stroke-dasharray: 0 620;
+      stroke-dashoffset: 350;
+    }
+    .selector:hover {
+      animation-name: roll;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes roll {
+      100% {
+        stroke-dasharray: 620 0;
+      }
+    }
