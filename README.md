@@ -1,4 +1,6 @@
 # SVG
+
+Содержание руководства:
 - простые фигуры
 - сложные фигуры
 - методы отображения SVG на сайте (svg-on-site.md)
@@ -9,11 +11,11 @@
 - система координат у SVG (coord.md)
 - трансформации в SVG (transform.md)
 - path (path.md)
-- Паттерн (pattern.md)
-- Иконки и создание спрайтов (icon-sprite.md)
-- Иконочные шрифты (icon-font.md)
-- Оптимизация SVG (clean.md)
-- Анимация SVG (animation.md)
+- паттерн (pattern.md)
+- иконки и создание спрайтов (icon-sprite.md)
+- иконочные шрифты (icon-font.md)
+- оптимизация SVG (clean.md)
+- анимация SVG (animation.md)
 
 SVG - формат векторных изображений, который содержит в себе XML код.  
 
